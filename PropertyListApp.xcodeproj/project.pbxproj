@@ -21,6 +21,7 @@
 		4C7306F71A0CDACF002D6DD0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7306D91A0CDACF002D6DD0 /* UIKit.framework */; };
 		4C7306FF1A0CDACF002D6DD0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C7306FD1A0CDACF002D6DD0 /* InfoPlist.strings */; };
 		4C7307011A0CDACF002D6DD0 /* PropertyListAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7307001A0CDACF002D6DD0 /* PropertyListAppTests.m */; };
+		4C73070B1A0CDB23002D6DD0 /* Doaa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C73070A1A0CDB23002D6DD0 /* Doaa.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4C7306FC1A0CDACF002D6DD0 /* PropertyListAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PropertyListAppTests-Info.plist"; sourceTree = "<group>"; };
 		4C7306FE1A0CDACF002D6DD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C7307001A0CDACF002D6DD0 /* PropertyListAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyListAppTests.m; sourceTree = "<group>"; };
+		4C73070A1A0CDB23002D6DD0 /* Doaa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Doaa.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		4C7306C91A0CDACF002D6DD0 = {
 			isa = PBXGroup;
 			children = (
+				4C73070A1A0CDB23002D6DD0 /* Doaa.plist */,
 				4C7306DB1A0CDACF002D6DD0 /* PropertyListApp */,
 				4C7306FA1A0CDACF002D6DD0 /* PropertyListAppTests */,
 				4C7306D41A0CDACF002D6DD0 /* Frameworks */,
@@ -230,6 +233,7 @@
 			files = (
 				4C7306EE1A0CDACF002D6DD0 /* Images.xcassets in Resources */,
 				4C7306E01A0CDACF002D6DD0 /* InfoPlist.strings in Resources */,
+				4C73070B1A0CDB23002D6DD0 /* Doaa.plist in Resources */,
 				4C7306E91A0CDACF002D6DD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
