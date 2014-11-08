@@ -18,6 +18,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Find out the path of Doaa.plist
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Doaa" ofType:@"plist"];
+    
+    // Load the file content and read the data into arrays
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    for (id key in dict) {
+        NSLog(@"key: %@, value: %@ \n", key, [dict objectForKey:key]);
+    }
 }
 
 - (void)didReceiveMemoryWarning
