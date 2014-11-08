@@ -9,15 +9,23 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    NSMutableArray *array;
+}
 
 @end
 
 @implementation ViewController
 
+@synthesize basicTableView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.basicTableView.delegate = self;
+    self.basicTableView.dataSource = self;
+    array = [[NSMutableArray alloc] initWithObjects:@"Hello", @"World", nil];
     
     // Find out the path of Doaa.plist
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Doaa" ofType:@"plist"];
@@ -27,8 +35,27 @@
     for (id key in dict) {
         NSLog(@"key: %@, value: %@ \n", key, [dict objectForKey:key]);
     }
+    
 }
 
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [array count];
+}
+
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    cell.textLabel.text = [array objectAtIndex:indexPath.row];
+    return cell;
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
