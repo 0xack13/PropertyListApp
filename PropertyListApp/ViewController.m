@@ -55,12 +55,12 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    NSArray *currentDict = [dict allValues];
-    
+    NSArray *currentDict = [dict allKeys];
+    NSArray *currentDictValue = [dict allValues];
     
     NSLog(@"%@", [currentDict objectAtIndex:0]);
     //cell.textLabel.text = [array objectAtIndex:indexPath.row];
-    cell.textLabel.text = [currentDict objectAtIndex:indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"Key: %@, Value: %@", [currentDict objectAtIndex:indexPath.row], [currentDictValue objectAtIndex:indexPath.row]];
     return cell;
 }
 - (void)didReceiveMemoryWarning
