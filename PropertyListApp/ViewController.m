@@ -11,6 +11,7 @@
 @interface ViewController ()
 {
     NSMutableArray *array;
+    NSDictionary *dict;
 }
 
 @end
@@ -31,7 +32,7 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Doaa" ofType:@"plist"];
     
     // Load the file content and read the data into arrays
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     for (id key in dict) {
         NSLog(@"key: %@, value: %@ \n", key, [dict objectForKey:key]);
     }
@@ -45,7 +46,8 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [array count];
+    //return [array count];
+    return [dict count];
 }
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -53,7 +55,12 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [array objectAtIndex:indexPath.row];
+    NSArray *currentDict = [dict allValues];
+    
+    
+    NSLog(@"%@", [currentDict objectAtIndex:0]);
+    //cell.textLabel.text = [array objectAtIndex:indexPath.row];
+    cell.textLabel.text = [currentDict objectAtIndex:indexPath.row];
     return cell;
 }
 - (void)didReceiveMemoryWarning

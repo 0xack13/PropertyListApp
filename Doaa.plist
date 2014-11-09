@@ -3,6 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>Test</key>
-	<string>Test Value</string>
+	<string>Test2</string>
+	<key>Test2</key>
+	<string>Tet3</string>
 </dict>
 </plist>
