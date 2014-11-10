@@ -61,6 +61,8 @@
     NSLog(@"%@", [currentDict objectAtIndex:0]);
     //cell.textLabel.text = [array objectAtIndex:indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"Key: %@, Value: %@", [currentDict objectAtIndex:indexPath.row], [currentDictValue objectAtIndex:indexPath.row]];
+    cell.detailTextLabel.text = [currentDictValue objectAtIndex:indexPath.row];
+    
     return cell;
 }
 - (void)didReceiveMemoryWarning
