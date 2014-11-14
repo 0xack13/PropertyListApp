@@ -10,4 +10,7 @@
 
 @interface PropDetailedViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UILabel *detailLabel;
+@property (nonatomic, strong) NSString *detailName;
+
 @end

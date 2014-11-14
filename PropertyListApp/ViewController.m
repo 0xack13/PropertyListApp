@@ -7,18 +7,23 @@
 //
 
 #import "ViewController.h"
+#import "PropDetailedViewController.h"
 
 @interface ViewController ()
 {
     NSMutableArray *array;
     NSDictionary *dict;
+    NSArray *currentDict;
 }
+
 
 @end
 
 @implementation ViewController
 
 @synthesize basicTableView;
+@synthesize tableView;
+
 
 - (void)viewDidLoad
 {
@@ -55,7 +60,7 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    NSArray *currentDict = [dict allKeys];
+    currentDict = [dict allKeys];
     NSArray *currentDictValue = [dict allValues];
     
     NSLog(@"%@", [currentDict objectAtIndex:0]);
@@ -69,6 +74,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        PropDetailedViewController *destViewController = segue.destinationViewController;
+        destViewController.detailName = [currentDict objectAtIndex:indexPath.row];
+        NSLog(@"Hello %@", [dict objectForKey:@"Dict1"]);
+    }
 }
 
 @end

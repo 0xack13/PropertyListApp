@@ -7,12 +7,16 @@
 //
 
 #import "PropDetailedViewController.h"
+#import "ViewController.h"
 
 @interface PropDetailedViewController ()
 
 @end
 
 @implementation PropDetailedViewController
+
+@synthesize detailLabel;
+@synthesize detailName;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +31,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    detailLabel.text = detailName;
 }
 
 - (void)didReceiveMemoryWarning

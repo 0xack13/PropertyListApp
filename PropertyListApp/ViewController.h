@@ -11,4 +11,7 @@
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *basicTableView;
 
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+
+
 @end

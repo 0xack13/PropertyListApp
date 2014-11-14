@@ -45,7 +45,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="PzN-Mg-gcs" kind="push" identifier="toDetails" id="k6A-5l-frT"/>
+                                            <segue destination="PzN-Mg-gcs" kind="push" identifier="showRecipeDetail" id="k6A-5l-frT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -85,6 +85,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Y01-on-br5"/>
+                    <connections>
+                        <outlet property="detailLabel" destination="THi-aP-1as" id="P4Y-sg-GRH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GsY-lw-BFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
