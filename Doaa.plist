@@ -2,11 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Test</key>
+	<key>Dict1</key>
 	<string>Test2</string>
-	<key>Hint</key>
+	<key>Dict2</key>
 	<string>You have to click twice to access the system</string>
-	<key>Test2</key>
+	<key>Dict3</key>
 	<string>Tet3</string>
 </dict>
 </plist>
