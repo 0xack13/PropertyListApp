@@ -22,6 +22,7 @@
 		4C7306FF1A0CDACF002D6DD0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C7306FD1A0CDACF002D6DD0 /* InfoPlist.strings */; };
 		4C7307011A0CDACF002D6DD0 /* PropertyListAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7307001A0CDACF002D6DD0 /* PropertyListAppTests.m */; };
 		4C73070B1A0CDB23002D6DD0 /* Doaa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C73070A1A0CDB23002D6DD0 /* Doaa.plist */; };
+		4C9D636F1A164DDC00F3CF47 /* PropDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D636E1A164DDC00F3CF47 /* PropDetailedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		4C7306FE1A0CDACF002D6DD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C7307001A0CDACF002D6DD0 /* PropertyListAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertyListAppTests.m; sourceTree = "<group>"; };
 		4C73070A1A0CDB23002D6DD0 /* Doaa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Doaa.plist; sourceTree = "<group>"; };
+		4C9D636D1A164DDC00F3CF47 /* PropDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropDetailedViewController.h; sourceTree = "<group>"; };
+		4C9D636E1A164DDC00F3CF47 /* PropDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropDetailedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				4C7306EB1A0CDACF002D6DD0 /* ViewController.m */,
 				4C7306ED1A0CDACF002D6DD0 /* Images.xcassets */,
 				4C7306DC1A0CDACF002D6DD0 /* Supporting Files */,
+				4C9D636D1A164DDC00F3CF47 /* PropDetailedViewController.h */,
+				4C9D636E1A164DDC00F3CF47 /* PropDetailedViewController.m */,
 			);
 			path = PropertyListApp;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				4C7306EC1A0CDACF002D6DD0 /* ViewController.m in Sources */,
 				4C7306E61A0CDACF002D6DD0 /* AppDelegate.m in Sources */,
 				4C7306E21A0CDACF002D6DD0 /* main.m in Sources */,
+				4C9D636F1A164DDC00F3CF47 /* PropDetailedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +470,7 @@
 				4C7307061A0CDACF002D6DD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C7307071A0CDACF002D6DD0 /* Build configuration list for PBXNativeTarget "PropertyListAppTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +479,7 @@
 				4C7307091A0CDACF002D6DD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
