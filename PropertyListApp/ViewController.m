@@ -79,10 +79,13 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSIndexPath *indexPath = [self.basicTableView indexPathForSelectedRow];
         PropDetailedViewController *destViewController = segue.destinationViewController;
         destViewController.detailName = [currentDict objectAtIndex:indexPath.row];
         NSLog(@"Hello %@", [dict objectForKey:@"Dict1"]);
+        
+        NSArray *currentDictValue = [dict allValues];
+        NSLog(@"Current value: %@", [currentDictValue objectAtIndex:indexPath.row]);
     }
 }
 
